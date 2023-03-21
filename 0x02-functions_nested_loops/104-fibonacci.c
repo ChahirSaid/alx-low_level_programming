@@ -6,24 +6,21 @@
  * Description: prints the first 98 Fibonacci numbers
  *		starting with 1 and 2 followed by a new line
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Succes)
 */
 
 int main(void)
 {
-	int a = 1, b = 2, next, i;
+	unsigned long int a = 1, b = 2, c, i;
 
-	printf("%d, %d, ", a, b);
-	for (i = 3; i <= 98; ++i)
+	printf("%lu, %lu", a, b);
+
+	for (i = 0; i < 96; i++)
 	{
-		next = a + b;
-		printf("%d", next);
-		if (i != 98)
-		{
-			printf(", ");
-		}
+		c = a + b;
+		printf(", %lu", c);
 		a = b;
-		b = next;
+		b = c;
 	}
 	printf("\n");
 	return (0);
