@@ -8,19 +8,15 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i, j;
+	int ch;
 	char str[] = "_putchar";
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		for (j = 0; j <= i; j++)
-		{
-			putchar(str[j]);
-		}
-	}
-	putchar('\n');
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
+	_putchar('\n');
+
 	return (0);
 }
-
