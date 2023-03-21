@@ -2,7 +2,7 @@
 
 /**
  * print_sign - print + if n is greater than zero,
- *             0 if n is equal to zero 
+ *             0 if n is equal to zero
  *             and - if n is less than zero.
  *
  * @n: takes integer type input for function.
