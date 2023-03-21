@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * times_table > prints the 9 times table
+ * times_table - prints the 9 times table
  *
  * ./9-times_table | cat -e will print the following:
  * 0, 0, 0, 0, ...

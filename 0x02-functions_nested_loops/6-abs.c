@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * _abs > function is used to calculate the absolute value of a number.
+ * _abs - function is used to calculate the absolute value of a number.
  *
  * @n: takes in integer type input for function
  *

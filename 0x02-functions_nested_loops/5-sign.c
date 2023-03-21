@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * print_sign > print + if n is greater than zero,
+ * print_sign - print + if n is greater than zero,
  *             0 if n is equal to zero 
  *             and - if n is less than zero.
  *
