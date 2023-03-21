@@ -9,31 +9,20 @@
  * Return: Always 0 (Success)
 */
 
-int main(void)
+int main()
 {
-	/* Initialize the first two Fibonacci numbers*/
-	int a = 1;
-	int b = 2;
-
-	/* Print the first two Fibonacci numbers*/
+	int a = 1, b = 2, next, i;
 	printf("%d, %d, ", a, b);
-
-	/* Compute and print the rest of the Fibonacci numbers*/
-	for (int i = 2; i < 98; i++)
+	for (i = 3; i <= 98; ++i)
 	{
-		/* Compute the next Fibonacci number*/
-		int c = a + b;
-
-		/* Print the next Fibonacci number*/
-		printf("%d, ", c);
-
-		/* Update the values of a and b for the next iteration*/
+		next = a + b;
+		printf("%d", next);
+		if (i != 98) {
+			printf(", ");
+		}
 		a = b;
-		b = c;
+		b = next;
 	}
-
-	/* Print a newline character at the end*/
 	printf("\n");
-
 	return (0);
 }
