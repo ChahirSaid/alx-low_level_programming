@@ -9,15 +9,17 @@
  * Return: Always 0 (Success)
 */
 
-int main()
+int main(void)
 {
 	int a = 1, b = 2, next, i;
+
 	printf("%d, %d, ", a, b);
 	for (i = 3; i <= 98; ++i)
 	{
 		next = a + b;
 		printf("%d", next);
-		if (i != 98) {
+		if (i != 98)
+		{
 			printf(", ");
 		}
 		a = b;
