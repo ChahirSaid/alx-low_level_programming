@@ -6,7 +6,7 @@
  * @a: the array of integers
  * @n: the size of the array
  *
- *return void
+ *Return: void
  **/
 
 void reverse_array(int *a, int n)
