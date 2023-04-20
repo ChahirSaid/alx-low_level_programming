@@ -1,46 +1,40 @@
 #include "3-calc.h"
 
 /**
- * main - program that perfroms simple operations
- * @ac: number of arguments
- * @av: array of arguments
+ * main - check the code for Holberton School students.
+ * @argc: number of arguments.
+ * @argv: array ofarguments.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-int main(int ac, char *av[])
+int main(int argc, char *argv[])
 {
-	int ar1, ar2, result;
-	char op;
-	int (*func)(int, int);
+	int a, b;
+	int (*operation)(int, int);
 
-	if (ac != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	ar1 = atoi(av[1]);
-	ar2 = atoi(av[3]);
-
-	func = get_op_func(av[2]);
-
-	if (!func)
+	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	op = *av[2];
+	operation = get_op_func(argv[2]);
 
-	if ((op == '/' || op == '%') && ar2 == 0)
+	if (operation == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 
-	result = func(ar1, ar2);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-	printf("%d\n", result);
-
+	printf("%d\n", operation(a, b));
 	return (0);
 }
