@@ -1,9 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
- * create_file - creates a file.
+ * create_file - creates a file
  * @filename: variable pointer
  * @text_content: content file
  *
