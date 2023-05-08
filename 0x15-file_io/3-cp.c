@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
 * main - copies the content of a file to another file
@@ -52,4 +50,3 @@ if (close(file_to) == -1)
 
 return (0);
 }
-
