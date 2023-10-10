@@ -1,6 +1,6 @@
-# Project: 0x1E. C - Search Algorithms
+# 0x1E. C - Search Algorithms
 
-## Project Tasks
+## Tasks
 1. **Linear search:** Write a function that searches for a value in an array of integers using the Linear search algorithm.
 
 2. **Binary search:** Write a function that searches for a value in a sorted array of integers using the Binary search algorithm.
